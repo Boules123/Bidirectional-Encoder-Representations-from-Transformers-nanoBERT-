@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Parameters-110M-blueviolet?style=for-the-badge" alt="Parameters">
 </p>
 
-<h1 align="center">BERT — From Scratch in PyTorch</h1>
+<h1 align="center">nanoBERT — From Scratch in PyTorch</h1>
 
 <p align="center">
   <b>A faithful, from-scratch PyTorch implementation of the original BERT paper</b><br>
