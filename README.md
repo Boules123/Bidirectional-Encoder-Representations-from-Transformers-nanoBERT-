@@ -424,7 +424,7 @@ Each encoder layer follows the **post-norm residual connection** pattern with **
 #        + learned_bias               — output bias term
 ```
 
-![MLM & NSP Heads](assets/MLM_NSP.png)
+![MLM & NSP Heads](assets/MLM_NSP.jpg)
 
 **Weight tying** between the MLM output projection and the input token embedding matrix is a key paper design — it reduces parameters and creates a shared representation space.
 
