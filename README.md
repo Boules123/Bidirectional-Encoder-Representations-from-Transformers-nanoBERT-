@@ -323,53 +323,6 @@ for name, param in self.named_parameters():
 
 ---
 
-## Inference
-
-The project includes an interactive inference script supporting both pre-training tasks:
-
-```bash
-python inference.py
-```
-
-You'll be prompted to select a mode:
-```
-Select inference mode:
-  1. Masked Language Model (MLM)
-  2. Next Sentence Prediction (NSP)
-  3. Run both demos
-```
-
-### Masked Language Modeling (MLM)
-
-Fill in `[MASK]` tokens with the model's top-k predictions:
-
-```
-MLM >>> The king [MASK] to the castle.
-
-  [MASK] at position 3:
-    1. went            0.3241  ██████████
-    2. returned        0.1856  █████
-    3. came            0.1203  ███
-    4. rode            0.0892  ██
-    5. traveled        0.0654  █
-```
-
-### Next Sentence Prediction (NSP)
-
-Test whether the model thinks sentence B follows sentence A:
-
-```
-Sentence A >>> The sun was setting over the horizon.
-Sentence B >>> Beautiful colors painted the sky.
-
-  Prediction : IsNext
-  Confidence : 0.8734
-  P(IsNext)  : 0.8734
-  P(NotNext) : 0.1266
-```
-
----
-
 ## Model Components
 
 ### 1. Embedding Layer (`encoder.py`)
